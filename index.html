@@ -54,7 +54,7 @@
             function show() {
                 var e = document.getElementById('chartSelect');
                 var strUser = e.options[e.selectedIndex].value;
-            
+
             }   
         </script>
         </form>
@@ -65,7 +65,7 @@
        <script> 
        $(function () {
        
-        $.getJSON(strUser, function(data) {
+        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
         // Create the chart
         $('#container').highcharts('StockChart', {
             
